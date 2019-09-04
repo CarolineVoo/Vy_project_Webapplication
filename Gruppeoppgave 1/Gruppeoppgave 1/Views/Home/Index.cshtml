@@ -4,25 +4,85 @@
 }
 
 <header class="header">
-    <div class="text-light text-center text-uppercase w-50 text-left float-right p-1 slagOrd">Vi kjører for deg</div>
+    <div class="text-light text-center text-uppercase w-50 text-left float-right p-1 slagOrd"><strong> Vy </strong> kjører for deg</div>
 </header>
 
-<section class="mt-3 w-50 sectionRegistrering mx-auto">
-    <h2 class="text-center">Hvor ønsker du å reise?</h2>
+<section class="mt-4 w-50 sectionRegistrering mx-auto">
+    <h2 class="text-center mb-4">Hvor ønsker du å reise?</h2>
 
     <form class="form-group" action="" method="post">
-        <div class="card bestillBox">
-            <div class="card-header"> Bestill billett her:</div>
-            <div class="card-body">
-                <table class="table">
+      
+                <table class="table table-hover border-top-0 tabell">
                     <tr>
-                        <th class="bg-succes">
-                        <td class="p-0">Fra:</td>
-                        <td> <input type="text" id="name" class="form-control form-control-sm p-0" placeholder="Enter name"> </td>
+                        <th class="pr-0">
+                            <p>Fra:</p>
+                        <td class="pl-0"> <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 registrerReise" placeholder="Hvor vil du reise fra?"> </td>
                         </th>
-                        <th>Til: <input type="text" /> </th>
+
+                        <th class="pr-0">
+                            <p>Til:</p>
+                            <td class="pl-0"> <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 registrerReise" placeholder="Hvor vil du dra?"> </td>
+                        </th>
                     </tr>
-                </table>
+
+                    <tr>
+                        <td class="pr-0">
+                            <strong> En vei: </strong>
+                        </td>
+                        <td class="pl-0">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="enVei" name="typeReise" />
+                            </div>
+                        </td>
+                        <td class="pr-0">
+                            <strong>Tur/Retur: </strong>
+                        </td>
+                        <td class="pl-0">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="turRetur" name="typeReise" />
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="pt-3"> <strong> Utreise:  </strong>  </td>
+                        <td>
+                            <input type="date" class="input-group date form-control-plaintext datoOgTid" />
+                        </td>
+
+                        <td class="pr-0"><strong> Tid: </strong></td>
+                        <td class="pl-0">
+                            <select class="form-control-plaintext datoOgTid pr-0">
+                                <option>00:00</option>
+                                <option>01:00</option>
+                                <option>02:00</option>
+                                <option>03:00</option>
+                                <option>04:00</option>
+                                <option>05:00</option>
+                                <option>06:00</option>
+                                <option>07:00</option>
+                                <option>08:00</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                                <option>23:00</option>
+                            </select>
+                            </div>
+                        </td>
+                    
+                    </tr>
+                </table>  
 
             </div>
         </div>
@@ -61,5 +121,31 @@
         font-family: 'Georgia Pro';
         margin-top: 100px;
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    }
+
+    .tabell p {
+        font-size: 20px;
+    }
+
+    .registrerReise{
+      outline: none;
+      font-size:25px;
+      border-bottom: 2px solid #7d7d7d;
+      background-color: #f5f5f5;
+       
+    }
+
+    .datoOgTid{
+        outline: none;
+        border-bottom: 2px solid #7d7d7d;
+        background-color: #f5f5f5;
+    }
+
+    span{
+        display:inline-block;
+    }
+
+    .tabell td{
+        padding-bottom: 30px;
     }
 </style>
