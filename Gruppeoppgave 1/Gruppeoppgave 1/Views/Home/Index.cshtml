@@ -7,13 +7,30 @@
     <div class="text-light text-center text-uppercase w-50 text-left float-right p-1 slagOrd">Vi kjører for deg</div>
 </header>
 
-<section class="bg-success mt-3 sectionRegistrering">
-    <h2>Hvor ønsker du å reise?</h2>
-    <form action="" method="post">
+<section class="mt-3 w-50 sectionRegistrering mx-auto">
+    <h2 class="text-center">Hvor ønsker du å reise?</h2>
+    
+    <form class="form-group" action="" method="post">
+        <div class="card bestillBox">
+            <div class="card-header"> Bestill billett her:</div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th class="bg-succes">
+                            <td class="p-0">Fra:</td><td> <input type="text" id="name" class="form-control form-control-sm p-0" placeholder="Enter name"> </td>
+                        </th>
+                        <th>Til: <input type="text" /> </th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <!---
         <table class="table">
             <thead>
                 <tr class="bg-danger">
-                    <th class="bg-success p-0">Fra: <input type="text" /> </th>
+                    <th class="bg-succes">Fra: <input type="text" /> </th>
                     <th>Til: <input type="text" /> </th>
                 </tr>
             </thead>
@@ -21,7 +38,7 @@
                 <tr>
                 </tr>
             </tbody>
-        </table>
+        </table>  -->
     </form>
 
 </section>
@@ -43,9 +60,9 @@
         font-family: 'Georgia Pro';
         margin-top: 100px;
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-        
-        
+           
     }
+
 
   
 </style>
