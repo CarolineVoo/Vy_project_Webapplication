@@ -14,73 +14,122 @@
       
                 <table class="table table-hover border-top-0 tabell">
                     <tr>
-                        <th class="pr-0">
-                            <p>Fra:</p>
-                        <td class="pl-0"> <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 registrerReise" placeholder="Hvor vil du reise fra?"> </td>
-                        </th>
+                        <td class="align-items-center form1">
+                            <div class="form-group row pl-5">
+                                <p class="mr-3 pt-1"> <strong>Fra: </strong></p>
+                                <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 mr-5 registrerReise" placeholder="Hvor vil du reise fra?">
 
-                        <th class="pr-0">
-                            <p>Til:</p>
-                            <td class="pl-0"> <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 registrerReise" placeholder="Hvor vil du dra?"> </td>
-                        </th>
-                    </tr>
+                                <p class="mr-3 pt-1"> <strong>Til: </strong></p>
+                                <input type="text" id="name" class="form-control-plaintext form-control-sm rounded-0 p-0 registrerReise" placeholder="Hvor vil du dra?">
 
-                    <tr>
-                        <td class="pr-0">
-                            <strong> En vei: </strong>
-                        </td>
-                        <td class="pl-0">
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" value="enVei" name="typeReise" />
-                            </div>
-                        </td>
-                        <td class="pr-0">
-                            <strong>Tur/Retur: </strong>
-                        </td>
-                        <td class="pl-0">
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" value="turRetur" name="typeReise" />
                             </div>
                         </td>
                     </tr>
 
                     <tr>
-                        <td class="pt-3"> <strong> Utreise:  </strong>  </td>
                         <td>
-                            <input type="date" class="input-group date form-control-plaintext datoOgTid" />
-                        </td>
-
-                        <td class="pr-0"><strong> Tid: </strong></td>
-                        <td class="pl-0">
-                            <select class="form-control-plaintext datoOgTid pr-0">
-                                <option>00:00</option>
-                                <option>01:00</option>
-                                <option>02:00</option>
-                                <option>03:00</option>
-                                <option>04:00</option>
-                                <option>05:00</option>
-                                <option>06:00</option>
-                                <option>07:00</option>
-                                <option>08:00</option>
-                                <option>09:00</option>
-                                <option>10:00</option>
-                                <option>11:00</option>
-                                <option>12:00</option>
-                                <option>13:00</option>
-                                <option>14:00</option>
-                                <option>15:00</option>
-                                <option>16:00</option>
-                                <option>17:00</option>
-                                <option>18:00</option>
-                                <option>19:00</option>
-                                <option>20:00</option>
-                                <option>21:00</option>
-                                <option>22:00</option>
-                                <option>23:00</option>
-                            </select>
+                            <div class="form-group row pl-5 mb-0 form2">
+                                <p class="mr-2"><strong> En vei: </strong></p>
+                       
+                                <div class="form-check mr-5 pt-1">
+                                    <input type="radio" class="form-check-input" value="enVei" name="typeReise" />
+                                </div>
+                        
+                                <p><strong>Tur/Retur: </strong></p>
+                        
+                                <div class="form-check ml-2 pt-1">
+                                    <input type="radio" class="form-check-input" value="turRetur" name="typeReise" />
+                                </div>
                             </div>
                         </td>
-                    
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="form-group row pl-5 form3">
+                                <p class="mr-3"><strong> Dato: </strong> </p>
+                                <input type="date" class="input-group date form-control-plaintext mr-5 datoOgTid" />
+
+
+                                <p class="mr-3"><strong> Tid: </strong> </p>
+
+                                <select class="form-control-plaintext datoOgTid pr-0">
+                                    <option>00:00</option>
+                                    <option>01:00</option>
+                                    <option>02:00</option>
+                                    <option>03:00</option>
+                                    <option>04:00</option>
+                                    <option>05:00</option>
+                                    <option>06:00</option>
+                                    <option>07:00</option>
+                                    <option>08:00</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                    <option>21:00</option>
+                                    <option>22:00</option>
+                                    <option>23:00</option>
+                                </select>
+                            </div>
+                       
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group row form4">
+                                <ul class="list-unstyled ml-5">
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Voksen</strong></span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Student</strong></span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Barn 6-17år</strong></span>
+                                    </li>
+                                </ul>
+
+                                <ul class="list-unstyled ml-5">
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Barn 0-5</strong></span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Honnør</strong></span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <input type="submit" class="buttons" value="-" />
+                                        <span>0</span>
+                                        <span><button class="buttons pr-2">+</button></span>
+                                        <span class="ml-1"> <strong>Verneplikt</strong></span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </td>
                     </tr>
                 </table>  
 
@@ -123,9 +172,22 @@
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     }
 
-    .tabell p {
-        font-size: 20px;
+     .form1 p {
+        font-size: 22px;
     }
+
+     .form2 p {
+        font-size: 18px;
+    }
+
+     .form3 p {
+        font-size: 18px;
+    }
+     
+     .form4{
+         width:70%;
+         margin: 0 auto;
+     }
 
     .registrerReise{
       outline: none;
@@ -146,6 +208,17 @@
     }
 
     .tabell td{
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        width:100%;
+    }
+
+    .buttons{
+        width:25px;
+        height:25px;
+        line-height: 1px;
+        padding-bottom:5px;
+        border:0;
+        border-radius:100%;
     }
 </style>
